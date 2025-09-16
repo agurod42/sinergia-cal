@@ -6,8 +6,9 @@
   "type": "module",
   "scripts": {
     "dev": "node server.mjs",
-    "build": "vercel build",
-    "deploy": "vercel"
+    "build": "echo \"No build step needed\"",
+    "deploy": "vercel",
+    "vercel:build": "vercel build"
   },
   "dependencies": {
     "express": "^4.21.1",
