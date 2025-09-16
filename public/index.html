@@ -4,6 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sinergia Calendars</title>
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/favicon.png">
+  <meta name="theme-color" content="#0b0d10">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
@@ -35,14 +38,15 @@
 <body>
   <header>
     <h1>Sinergia Calendars</h1>
-    <p>Select the calendars you want to subscribe to.</p>
+    <p>Select the calendars you want to subscribe to or download.</p>
   </header>
   <div class="container">
     <div class="card panel">
       <div class="row toolbar">
         <button class="btn" id="select-all">Select all</button>
         <button class="btn" id="clear">Clear</button>
-        <a class="btn accent push-right disabled" id="subscribe-selected" href="#" aria-disabled="true">Subscribe</a>
+        <a class="btn accent push-right disabled" id="subscribe-selected" href="#" aria-disabled="true">Subscribe selected</a>
+        <a class="btn" id="download-selected" href="#">Download selected</a>
       </div>
       <div class="row">
         <span class="muted">Tip: Company defaults to 5. You can pass cId, cacheMinutes, nocache in the URL.</span>
