@@ -29,8 +29,8 @@ app.get('/api/types', async (req, res) => {
   }
 });
 
-// Static frontend
-app.use(express.static('public'));
+// Static frontend from project root
+app.use(express.static('.'));
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
